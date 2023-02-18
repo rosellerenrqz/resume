@@ -1,0 +1,249 @@
+.header {
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 100;
+  background: var(--body-color);
+}
+
+.header-active {
+  opacity: 0.8;
+  background: var(--body-color);
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.logo:hover {
+  color: #fff;
+  transition: 0.3s all linear;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.navlink {
+  font-size: 1rem;
+  padding: 4px 8px;
+  color: var(--bg-color);
+}
+
+.navlink:hover {
+  color: var(--main-color);
+  /* background: var(--container-color); */
+  transition: 0.2s all linear;
+}
+
+/* BURGER-ICON */
+/* .burger-icon {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+  transition: 0.3s;
+} */
+
+/* .burger-icon div {
+  display: block;
+  background: var(--bg-color);
+  height: 2px;
+  width: 24px;
+  transition: 0.3s;
+} */
+
+/* .move .line1 {
+  transform: rotate (-45deg) translate(-5px, 5px);
+}
+.move .line2 {
+  opacity: 0;
+}
+.move .line3 {
+  transform: rotate (-45deg) translate(-5px, 5px);
+} */
+
+/* Responsive */
+
+@media (max-width: 990px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 890) {
+  section {
+    padding: 2rem 0;
+  }
+  .nav {
+    padding: 12px 0;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .portfolio-box {
+    height: 255px;
+  }
+}
+
+@media (max-width: 775px) {
+  .nav {
+    padding: 10px 0;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .home-img {
+    margin-top: 7rem;
+  }
+  .home {
+    min-height: 500px;
+    padding-top: 6rem;
+  }
+  .home-text h3 {
+    font-size: 1rem;
+  }
+  .home-text h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+  .home-text p {
+    font-size: 0.8rem;
+  }
+  .services-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-box {
+    height: 245px;
+  }
+  /* .burger-icon {
+    top: 0;
+    display: flex;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .open-menu {
+    right: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .navlink {
+    display: block;
+    margin: 1rem 0;
+  } */
+}
+
+@media (max-width: 630px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-data span {
+    font-size: 0.9rem;
+  }
+  .about-data h2 {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    margin: 0.8rem 0;
+  }
+  .about-text p {
+    font-size: 0.8rem;
+    margin-bottom: 1.3rem;
+  }
+  .projects-content {
+    grid-template-columns: repeat (2, 200px);
+  }
+}
+
+@media (max-width: 450px) {
+  .home {
+    width: 140px;
+    height: 140px;
+  }
+  .home-text h2 {
+    font-size: 2.1 rem;
+    line-height: 3.2rem;
+  }
+  .home-text p {
+    display: contents;
+  }
+
+  .about {
+    margin-top: 20rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .about-data h2 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin: 0.5rem 0;
+  }
+  .services-content,
+  .portfolio-content,
+  .projects-content {
+    grid-template-columns: 1fr;
+  }
+
+  .review-box,
+  .review-text {
+    font-size: 0.8rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .cv-btn {
+    margin-bottom: 1rem;
+  }
+}
